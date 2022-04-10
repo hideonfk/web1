@@ -1,0 +1,147 @@
+<!------------------------단축키---------------------
+
+1. 컨트롤 + s : 저장
+
+2. 알트 + 클릭 : 여러줄 커서
+   컨트롤 + 알트 + 화살표 방향키
+
+--------------------------------------------------->
+<!------------------------태그(약 150개)-----------------------
+      - 세계의 웹페이지 중 통계적으로 25~30개의 태그로 이루어진 페이지가 가장 많다
+
+ - 랭킹 안에 있는 것들
+1. <strong>~~~</strong> : ~~~ 문자 진하게 강조
+
+2. <h1~6>~~~</h1~6> : 주로 제목에 쓰이며 일반 문자와의 차이점으로는
+            페이지 소스에서 볼 수 있듯이 일반 문자는 문자만 묶여서 나오지만(inline-level elements)
+            H태그는 문장만 묶인게 아니라, 하나의 라인 전체가 
+            묶이거에 차이가 있다(block-level elements)
+
+3. <br> : 줄바꿈 태그 중 하나로 시각적인 효과만 적용하기 때문에 태그를 닫지 않는다
+
+4. <p></p> : 단락을 나누는 태그
+
+5. <img src="저장한 사진의 이름.jpg" width="크기" height="크기"> : 이미지 태그
+
+6. <li></li> : 목록 태그
+
+7. <ul></ul> : 목록끼리 경계를 두기 위한 부모태그
+      ->unordered list
+
+8. <title></title> : 웹페이지의 제목
+
+9. <meta></meta> : 작성한 문서를 컴퓨터가 읽고 웹페이지로 보여줄 때
+                   컴퓨터 언어로만 이루어진 배열로 보여진다
+                   그래서 메타 태그를 이용하여 원하는 규칙의 정보로 보여지게 할 수 있다
+                   ex) <meta charset="utf-8"> -> utf-8이라는 캐릭터셋으로 읽어라
+                   (한글을 적었을 때 글자가 깨져서 웹페이지에 보여준다)
+
+10. <html></html> : 최고위급 태그로 전체를 묶는 태그
+      <!doctype html> : '이 문서는 html이다'라는 관용적 코드로 html태그 위에 적어준다
+11. <head></head> : 본문을 설명하는 코드를 묶는 태그
+12. <body></body> : 본문을 묶는 태그로 정해진 룰이다.
+
+13. <a></a> : 링크를 걸기위한 태그로 열려있는 페이지에서 이동된다
+               ex) <a href="링크">문자</a> 
+             ★만약 새로운 페이지로 링크를 열고 싶을 때는 targer을 붙여준다
+                   <a href="링크" target="_blank">문자</a> 
+             ★href = hyper text + reference
+             ★만약 커서를 가져갔을 때 설명태그가 나오도록 하려면 title="html5 추가
+                  <a href="링크" target="_blank"  title="html5 설명서>문자</a>
+
+
+
+7. <div></div>
+<script></script>
+<link></link>
+<span></span>
+<style></style>
+<input>
+<form></form>
+<table></table>
+<tr>
+<td>
+
+
+ - 랭킹 안에 없음
+1. <u>~~~</u> : underline 밑줄(랭킹X)
+
+2. <ol>~~~</ol> : 목록끼리 경계를 두기 위한 부모태그
+      odered list 
+
+3. iframe 코드 : 영상 불러오기
+
+--------------------------------------------------->
+
+<!--
+숙제 : 테이블 작성하기
+
+-->
+<!doctype html>
+<html>
+<!--본문을 설명하는 문-->
+<head>
+      <title>WEB1 - HTML</title>
+      <meta charset="utf-8">
+</head>
+
+<!--본문-->
+<body>
+      <h1><a href="index.html">WEB</a></h1>
+      <ul>
+            <li>1. HTML</li>
+            <li>2. CSS</li>
+            <li>3. JAVASCRIPT</li>
+      </ul>
+
+      <ol>
+            <li><a href="1.html">html</a></li>
+            <li><a href="2.html">css</a></li>
+            <li><a href="3.html">javascript</a></li>
+      </ol>
+      <!--만약 리스트가 주제가 여러개면 ul태글르 쓴다
+      <ul>
+            <li>egoing</li>
+            <li>k8805</li>
+            <li>youbin</li>
+      </ul>
+      -->
+      <!--
+      극단적 사고> ul로 묶은 태그의 리스트에서
+      만약 사용자가 1번 항목인 list를 지워달라고 하면
+      수기로 2번의 css를 1번으로 3번을 2번으로 고쳐야하지만
+      ul태그를 ol태그로 변경하고 수동으로 적은 숫자를 지우면
+      자동으로 수정된다 -> ul을 쓸 이유가 있나??
+
+      <ol>
+            <li>1. html</li>
+            <li>2. css</li>
+            <li>3. javascript</li>
+      </ol>
+      -->
+
+
+      <H2>HTML이란 무엇인가?</H2>
+      <!--iframe 코드-->
+      <p><iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture" allowfullscreen></iframe></p>
+
+
+      <p><a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="html5 설명서">html</a>은 <strong>웹 애플, 웹 페이지를 <u>만들기</u></strong> 위한 보편적인 언어이다. 
+      <br>fjdsalfakjsd
+      fdsafaajdfkjs;lfkjsklffsadfklajfdakslfjasdlkfjlasd;kfasjf
+      fdsfakjfklspadfpslfsdafasdfdsafdfdsabhfkjasdfkjdfhksfsadfklajfdakslfjasdlkfjlasd;kfasjf
+      fdsfakjfklspadfpslfsdafasdfdsafdfdsabhfkjasdfkjdfhks
+      <img src="city1.jpg" width="200" height="200">
+      </p>
+
+      <p>fsadfklajfdakslfjasdlkfjlasd;kfasjf
+      fdsfakjfklspadfpslfsdafasdfdsafdfdsabhfkjasdfkjdfhksfsadfklajfdakslfjasdlkfjlasd;kfasjf
+      fdsfakjfklspadfpslfsdafasdfdsafdfdsabhfkjasdfkjdfhksfsadfklajfdakslfjasdlkfjlasd;kfasjf
+      fdsfakjfklspadfpslfsdafasdfdsafdfdsabhfkjasdfkjdfhks</p>
+</body>
+</html>
+
+
